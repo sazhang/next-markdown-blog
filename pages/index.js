@@ -27,7 +27,6 @@ export async function getStaticProps() {
     "date",
     "status",
     "link",
-    "linkDescription",
     "roles",
   ]);
 

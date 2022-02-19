@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
-        <body>
+        <body className="text-zinc-900">
           <Main></Main>
           <NextScript></NextScript>
         </body>

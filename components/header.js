@@ -5,14 +5,14 @@ export default function Header() {
         Sarah Zhang
       </span>
       <div className="flex md:text-lg lg:text-xl">
-        <a href="#work" className="mx-2 sm:mx-4">
+        <a href="#work" className="mx-2 sm:mx-4 hover:underline">
           Work
         </a>
         <a
           href="/files/sarah-zhang-resume-2022.pdf"
           target="_blank"
           rel="noreferrer"
-          className="mx-2 sm:mx-4"
+          className="mx-2 sm:mx-4 hover:underline"
         >
           Resume
         </a>
