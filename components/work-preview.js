@@ -2,8 +2,10 @@ export default function WorkPreview({
   name,
   description,
   date,
+  status,
   link,
   linkDescription,
+  roles,
 }) {
   const parsedDate = new Date(date);
   const [month, year] = [
@@ -12,27 +14,29 @@ export default function WorkPreview({
   ];
 
   return (
-    <div className="flex flex-wrap sm:flex-nowrap py-6 sm:py-8 lg:py-10">
-      <div className="w-full sm:w-4/12 pr-8">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-1 sm:mb-2 lg:mb-4">
+    <div className="flex flex-wrap sm:flex-nowrap py-8 sm:py-10 lg:py-12 border-b">
+      <div className="w-full sm:w-4/12 sm:pr-8 mb-2 sm:mb-0">
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
           {name}
         </h3>
-        <span className="text-sm sm:text-base md:text-lg lg:text-xl uppercase">
-          {month} {year}
-        </span>
       </div>
       <div className="w-full sm:w-8/12">
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-3 sm:mb-4 lg:mb-8">
+        <span className="text-base md:text-lg lg:text-xl">
+          {month} {year} &mdash; <i>{status}</i>
+        </span>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-6 mb-8 lg:mb-10">
           {description}
         </p>
-        <a
-          href={link}
-          className="md:text-lg lg:text-xl underline"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {linkDescription} ↗
-        </a>
+        <div>
+          {roles.map((role) => (
+            <span
+              key={`${name}_${role}`}
+              className="text-sm md:text-base lg:text-lg px-4 py-1 border border-solid rounded-full mr-2"
+            >
+              {role}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
