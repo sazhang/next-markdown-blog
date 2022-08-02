@@ -13,7 +13,7 @@ export default function Index({ allPosts }) {
         </Head>
         <div className="container mx-auto px-4 lg:px-8">
           <HeroSection></HeroSection>
-          {allPosts && <WorkSection posts={allPosts}></WorkSection>}
+          {/* {allPosts && <WorkSection posts={allPosts}></WorkSection>} */}
         </div>
       </Layout>
     </>

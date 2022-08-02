@@ -5,16 +5,22 @@ export default function Header() {
         Sarah Zhang
       </span>
       <div className="flex md:text-lg lg:text-xl">
-        <a href="#work" className="mx-2 sm:mx-4 hover:underline">
+        {/* <a href="#work" className="mx-2 sm:mx-4 hover:underline">
           Work
-        </a>
+        </a> */}
         <a
           href="/files/sarah-zhang-resume-2022.pdf"
           target="_blank"
           rel="noreferrer"
-          className="mx-2 sm:mx-4 hover:underline"
+          className="mx-2 sm:mx-4 hover:underline hover:decoration-wavy"
         >
           Resume
+        </a>
+        <a
+          href="mailto:sarah.hg.zhang@gmail.com"
+          className="mx-2 sm:mx-4 hover:underline hover:decoration-wavy"
+        >
+          Contact
         </a>
       </div>
     </header>

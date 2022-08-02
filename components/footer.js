@@ -8,15 +8,15 @@ export default function Footer() {
       <div className="flex flex-wrap flex-col sm:flex-row w-full sm:w-fit mb-2 sm:mb-0">
         <a
           href="mailto:sarah.hg.zhang@gmail.com"
-          className="underline mb-2 sm:mb-0 sm:mx-4"
+          className="hover:underline hover:decoration-wavy mb-2 sm:mb-0 sm:mx-4"
         >
           Contact
         </a>
         <a
-          href="https://github.com/sazhang"
+          href="https://github.com/sarahzdev"
           target="_blank"
           rel="noreferrer"
-          className="underline mb-2 sm:mb-0 sm:mx-4"
+          className="hover:underline hover:decoration-wavy mb-2 sm:mb-0 sm:mx-4"
         >
           Github
         </a>
@@ -24,15 +24,15 @@ export default function Footer() {
           href="https://twitter.com/haegeez"
           target="_blank"
           rel="noreferrer"
-          className="underline mb-2 sm:mb-0 sm:mx-4"
+          className="hover:underline hover:decoration-wavy mb-2 sm:mb-0 sm:mx-4"
         >
           Twitter
         </a>
         <a
-          href="https://www.linkedin.com/in/szhang96/"
+          href="https://www.linkedin.com/in/sarahzdev/"
           target="_blank"
           rel="noreferrer"
-          className="underline mb-2 sm:mb-0 sm:mx-4"
+          className="hover:underline hover:decoration-wavy mb-2 sm:mb-0 sm:mx-4"
         >
           LinkedIn
         </a>
