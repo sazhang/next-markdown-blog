@@ -8,7 +8,7 @@ export default function WorkPreview({ preview }) {
         alt={preview.name}
         width={640}
         height={480}
-        className="rounded"
+        className="bg-slate-100 rounded"
       ></Image>
       <div className="text-base md:text-lg lg:text-xl mt-4">
         <span className="float-right font-bold">{preview.year}</span>
