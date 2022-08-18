@@ -1,51 +1,27 @@
-export default function WorkPreview({
-  name,
-  description,
-  date,
-  status,
-  link,
-  roles,
-}) {
-  const parsedDate = new Date(date);
-  const [month, year] = [
-    parsedDate.toLocaleString("default", { month: "short" }),
-    parsedDate.getFullYear(),
-  ];
+import Image from "next/image";
 
+export default function WorkPreview({ preview }) {
   return (
-    <div className="card py-8 sm:py-10 lg:py-12 border-b relative">
-      <span className="text-3xl md:text-4xl absolute right-0">&#8599;</span>
-      <div className="flex flex-wrap sm:flex-nowrap">
-        <div className="w-full sm:w-4/12 sm:pr-8 mb-2 sm:mb-0">
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
-            <a
-              href={link}
-              target="_blank"
-              rel="noreferrer"
-              className="card__link"
-            >
-              {name}
-            </a>
-          </h3>
-        </div>
-        <div className="w-full sm:w-8/12">
-          <span className="text-base md:text-lg lg:text-xl">
-            {month} {year} &mdash; <i>{status}</i>
-          </span>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-6 mb-8 lg:mb-10">
-            {description}
-          </p>
-          <div>
-            {roles.map((role) => (
-              <span
-                key={`${name}_${role}`}
-                className="text-sm md:text-base lg:text-lg px-4 py-1 border border-solid rounded-full mr-2"
-              >
-                {role}
-              </span>
-            ))}
-          </div>
-        </div>
+    <div>
+      <Image
+        src={preview.image}
+        alt={preview.name}
+        width={640}
+        height={480}
+        className="rounded"
+      ></Image>
+      <div className="text-base md:text-lg lg:text-xl mt-4">
+        <span className="float-right font-bold">{preview.year}</span>
+        <h3 className="font-bold">{preview.name}</h3>
+        <p className="mt-2 mb-4">{preview.description}</p>
+        {preview.link && (
+          <a
+            href={preview.link}
+            className="italic hover:underline hover:decoration-wavy"
+          >
+            {preview.linkCopy} &#8594;
+          </a>
+        )}
       </div>
     </div>
   );
