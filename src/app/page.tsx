@@ -7,10 +7,10 @@ export default function Home() {
             Sarah Zhang
           </h1>
           <p className="col-span-6 md:col-span-4 text-xl sm:text-2xl">
-            Designer with a focus on craft, experience in building interfaces,
-            and a knack for transforming the abstract into the tangible.
-            Wayfinder between realms, connecting nodes and making sense with
-            design, code, and play.
+            Designer with a focus on craftsmanship, adept at building
+            interfaces, and an intuition for transforming the abstract into the
+            tangible. A wayfinder between realms, I connect nodes and create
+            meaning through design, code, and play.
           </p>
           <table className="col-span-6 md:col-span-4 h-44 border-separate border-spacing-y-1">
             <caption className="text-left font-medium">Work Experience</caption>
