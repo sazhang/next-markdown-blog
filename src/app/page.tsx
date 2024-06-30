@@ -1,16 +1,18 @@
 export default function Home() {
   return (
-    <main className="relative flex flex-wrap md:flex-nowrap">
-      <article className="md:sticky md:top-0 min-h-screen md:h-screen md:min-h-0 md:w-1/2">
+    <main className="relative flex flex-wrap xl:flex-nowrap">
+      <article className="xl:sticky xl:top-0 min-h-screen xl:h-screen xl:min-h-0 xl:w-1/2">
         <div className="h-full max-w-screen-md ml-auto grid grid-cols-6 gap-4 p-4">
-          <h1 className="col-span-6 font-medium">Sarah Zhang</h1>
-          <p className="col-span-6 lg:col-span-4">
+          <h1 className="col-span-6 font-medium text-xl sm:text-2xl">
+            Sarah Zhang
+          </h1>
+          <p className="col-span-6 md:col-span-4 text-xl sm:text-2xl">
             Designer with a focus on craft, experience in building interfaces,
             and a knack for transforming the abstract into the tangible.
-            Wayfinder in many realms, connecting nodes and making sense with
+            Wayfinder between realms, connecting nodes and making sense with
             design, code, and play.
           </p>
-          <table className="col-span-6 lg:col-span-4 h-44 border-separate border-spacing-y-1">
+          <table className="col-span-6 md:col-span-4 h-44 border-separate border-spacing-y-1">
             <caption className="text-left font-medium">Work Experience</caption>
             <tbody>
               <tr>
@@ -69,7 +71,7 @@ export default function Home() {
               </tr>
             </tbody>
           </table>
-          <footer className="col-span-6 lg:col-span-4 flex gap-8 items-end text-neutral-500">
+          <footer className="col-span-6 md:col-span-4 flex gap-8 items-end text-neutral-500">
             <a href="mailto:sarah.hg.zhang@gmail.com" className="underline">
               Contact
             </a>
@@ -100,7 +102,7 @@ export default function Home() {
           </footer>
         </div>
       </article>
-      <aside className="bg-white md:w-1/2">
+      <aside className="bg-white xl:w-1/2">
         {/* <div className="max-w-screen-md mr-auto p-4"></div> */}
       </aside>
     </main>
