@@ -15,6 +15,16 @@ const lunchtype = localFont({
       weight: "500",
       style: "normal",
     },
+    {
+      path: "./fonts/Lunchtype23-Regular-Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "./fonts/Lunchtype23-Medium-Italic.ttf",
+      weight: "500",
+      style: "italic",
+    },
   ],
   variable: "--font-lunchtype",
 });
