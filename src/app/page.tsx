@@ -5,10 +5,9 @@ export default function Home() {
         <div className="h-full max-w-screen-md ml-auto grid grid-cols-6 gap-4 p-4">
           <h1 className="col-span-6 font-medium text-xl">Sarah Zhang</h1>
           <p className="col-span-6 md:col-span-4 text-xl">
-            Designer with a focus on craftsmanship, adept at building
-            interfaces, and an intuition for transforming the abstract into the
-            tangible. A wayfinder between realms, I connect nodes and create
-            meaning through design, code, and play.
+            A designer who builds delightful experiences and friendly
+            interfaces, with an intuition for transforming the abstract into the
+            tangible. Making sense of the world through wayfinding and play.
           </p>
           <table className="col-span-6 md:col-span-4 h-44 border-separate border-spacing-y-1">
             <caption className="text-left italic">Work Experience</caption>
