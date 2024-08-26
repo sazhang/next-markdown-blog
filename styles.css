@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Lunchtype22";
+  src: url("fonts/Lunchtype22-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lunchtype22";
+  src: url("fonts/Lunchtype22-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lunchtype22";
+  src: url("fonts/Lunchtype22-Regular-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lunchtype22";
+  src: url("fonts/Lunchtype22-Medium-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+body {
+  font-family: "Lunchtype22", sans-serif;
+  color: #262626;
+  padding: 5rem 1rem 1rem;
+}
+
+article {
+  max-width: 36rem;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+section {
+  margin-top: 2.5rem;
+}
+
+ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+  padding-inline-start: 1.5rem;
+}
+
+.header__p {
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+
+.article__p {
+  line-height: 1.5rem;
+  margin: 2rem 0;
+}
+
+.footer__ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2.5rem;
+}
