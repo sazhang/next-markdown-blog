@@ -90,7 +90,7 @@ li::marker {
   object-fit: contain;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -103,23 +103,14 @@ li::marker {
     flex-wrap: nowrap;
     max-width: 1536px;
     margin: 0 auto;
-    height: 100vh;
-    overflow-y: hidden;
   }
 
   .content {
     width: 100%;
     max-width: 22rem;
     justify-content: space-between;
-  }
-
-  .gallery {
-    overflow-y: auto;
-  }
-}
-
-@media (min-width: 1280px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    position: sticky;
+    top: 0;
+    left: 0;
   }
 }
